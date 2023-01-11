@@ -21,6 +21,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .navigation {
@@ -72,8 +73,15 @@ body {
   line-height: 1.5rem;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
 .icon {
   display: flex;
   align-items: center;
   margin-bottom: 120px;
+  list-style: none;
 }
