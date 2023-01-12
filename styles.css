@@ -9,10 +9,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1c1a19;
-  background-image: url(./images/bg-to-right.png);
-  background-repeat: no-repeat;
-  background-position-y: 118%;
-  background-position-x: 100%;
 }
 
 .logo {
@@ -42,6 +38,10 @@ body {
   padding: 120px 24px 0;
   gap: 12px;
   width: 100%;
+  background-image: url(./images/bg-to-right.png);
+  background-repeat: no-repeat;
+  background-position-y: 125%;
+  background-position-x: 100%;
 }
 
 .para1 {
@@ -84,4 +84,87 @@ body {
   align-items: center;
   margin-bottom: 120px;
   list-style: none;
+}
+
+.my-work {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-top: 120px;
+}
+
+.recent {
+  margin-top: 80px;
+  display: flex;
+  width: 90%;
+  align-self: center;
+  flex-direction: column;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.recent-work {
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  border-bottom: 1px solid #212121;
+  width: 90%;
+  align-self: center;
+}
+
+.Multi-Post {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.about-work {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.list-of-lang {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.list-language {
+  display: flex;
+  background: #fff;
+  list-style: none;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+}
+
+.b-t-n-1 {
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  margin: 24px 0 24px 0;
+  align-self: flex-start;
 }
