@@ -9,10 +9,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1c1a19;
-  background-image: url(./images/bg-to-right.png);
-  background-repeat: no-repeat;
-  background-position-y: 118%;
-  background-position-x: 100%;
 }
 
 .logo {
@@ -28,10 +24,10 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1.25rem;
   justify-content: space-between;
   background-color: #3e3c3c;
   height: 5rem;
+  padding: 1rem;
 }
 
 .main {
@@ -42,6 +38,10 @@ body {
   padding: 120px 24px 0;
   gap: 12px;
   width: 100%;
+  background-image: url(./images/bg-to-right.png);
+  background-repeat: no-repeat;
+  background-position-y: 125%;
+  background-position-x: 100%;
 }
 
 .para1 {
@@ -75,13 +75,269 @@ body {
 
 .link {
   display: flex;
-  align-items: center;
   list-style: none;
+  align-items: center;
 }
 
 .icon {
   display: flex;
-  align-items: center;
+  justify-items: left;
   margin-bottom: 120px;
   list-style: none;
+}
+
+.my-work {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: column;
+  background: #fff;
+  padding-left: 24px;
+  padding-top: 120px;
+}
+
+.recent {
+  margin-top: 80px;
+  display: flex;
+  width: 90%;
+  align-self: center;
+  flex-direction: column;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.recent-work {
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  border-bottom: 1px solid #212121;
+  width: 90%;
+  align-self: center;
+}
+
+.Multi-Post {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.about-work {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.list-of-lang {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.list-language {
+  display: flex;
+  background: #fff;
+  list-style: none;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+}
+
+.b-t-n-1 {
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  margin: 24px 0 24px 0;
+  align-self: flex-start;
+}
+
+.work-showcase {
+  background: #fff;
+  padding-bottom: 120px;
+}
+
+.wk-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-image: url(./images/Mask\ Group-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profession {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.prof-details {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  width: 90%;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.lang-list {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin-left: 1rem;
+}
+
+.language {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.b-t-n-2 {
+  margin-top: 14px;
+  background: #ff6b00;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(./images/Frame-bg-right-btm.png);
+  background-repeat: no-repeat;
+  background-position-y: 22rem;
+  background-position-x: 13.5rem;
+}
+
+.about {
+  margin-top: 120px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.know-about-me {
+  width: 100%;
+  padding-left: 24px;
+}
+
+.details-about-me {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding-top: 0.5rem;
+}
+
+.b-t-n-3 {
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  margin: 24px 0 24px 0;
+  align-self: flex-start;
+  margin-bottom: 120px;
+}
+
+.horizontal {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.code-first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  align-items: center;
+}
+
+.all-in-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 12px 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
+
+.list-of-language,
+.list-of-frameworks,
+.list-of-skills {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.list-of-language::before {
+  position: relative;
+  right: 10px;
+  content: url(./images/Rectangle-55-bg-img.png);
+}
+
+.list-of-frameworks::before {
+  position: relative;
+  right: 10px;
+  content: url(./images/Rectangle-56-bg-img.png);
+}
+
+.list-of-skills::before {
+  position: relative;
+  right: 10px;
+  content: url(./images/Rectangle-57-bg-img.png);
 }
