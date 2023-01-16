@@ -139,14 +139,14 @@ body {
 }
 
 .list-of-lang {
-  display: inline-flex;
   gap: 12px;
   margin-top: 12px;
   align-items: flex-start;
 }
 
 .list-language {
-  display: flex;
+  float: left;
+  margin: 5px;
   background: #fff;
   list-style: none;
   padding: 10px 12px;
