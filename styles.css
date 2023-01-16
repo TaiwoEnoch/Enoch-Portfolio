@@ -207,16 +207,12 @@ body {
   margin-left: 1rem;
 }
 
-.lang-list {
-  display: flex;
-  list-style: none;
-  gap: 12px;
-  margin-left: 1rem;
-}
-
 .language {
+  float: left;
+  list-style-type: none;
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
+  margin-left: 12px;
   color: #fff;
 }
 
