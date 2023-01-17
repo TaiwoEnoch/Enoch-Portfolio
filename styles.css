@@ -344,7 +344,6 @@ body {
 
 .contact-section {
   background: #fff;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,11 +395,17 @@ body {
 
 input {
   color: #979493;
+  border: none;
 }
 
-.form input, textarea {
+textarea {
+  color: #3c3a39;
+  background: #fbf8f7;
+}
+
+.form input {
   width: 100%;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -409,12 +414,49 @@ input {
   padding: 12px;
 }
 
-textarea {
-  color: #3c3a39;
-  background: #fbf8f7;
+.form textarea {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  border: none;
+  padding: 12px;
 }
 
-.form button {
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+button:visited {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background: #f55800;
+  color: #fff;
+}
+
+button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.submit {
   width: fit-content;
   place-items: center;
   padding: 12px;
