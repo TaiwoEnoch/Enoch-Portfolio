@@ -413,6 +413,7 @@ textarea {
   line-height: 160%;
   border: none;
   padding: 12px;
+  border-bottom: 1px solid #000;
 }
 
 .form textarea {
