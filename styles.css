@@ -344,6 +344,10 @@ body {
 
 .contact-section {
   background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-details {
@@ -364,4 +368,63 @@ body {
   text-align: center;
   color: #172b4d;
   padding-bottom: 58px;
+}
+
+.form {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 124px;
+}
+
+.form ul {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form li {
+  list-style-type: none;
+  width: 90%;
+  height: auto;
+  align-self: center;
+  margin: 12px;
+}
+
+.form input, textarea {
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  border: none;
+  padding: 12px;
+}
+
+input {
+  color: #979493;
+}
+
+textarea {
+  color:  #3c3a39;
+  background: #fbf8f7;
+  
+}
+
+.form button {
+  width: fit-content;
+  place-items: center;
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  margin-top: 24px;
+  padding: 12px;
 }
