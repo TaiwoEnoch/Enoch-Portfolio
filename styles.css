@@ -394,6 +394,10 @@ body {
   margin: 12px;
 }
 
+input {
+  color: #979493;
+}
+
 .form input, textarea {
   width: 100%;
   font-family: 'Inter';
@@ -405,14 +409,9 @@ body {
   padding: 12px;
 }
 
-input {
-  color: #979493;
-}
-
 textarea {
-  color:  #3c3a39;
+  color: #3c3a39;
   background: #fbf8f7;
-  
 }
 
 .form button {
@@ -426,5 +425,31 @@ textarea {
   color: #fff;
   border: none;
   margin-top: 24px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-icons {
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.icons-for-footer {
+  list-style: none;
+}
+
+.bottom-line {
+  width: 40%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  justify-content: center;
+  margin-left: 120px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
