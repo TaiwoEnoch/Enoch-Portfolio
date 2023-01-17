@@ -404,6 +404,7 @@ textarea {
 }
 
 .form input {
+  justify-content: left;
   width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
