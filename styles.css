@@ -30,6 +30,10 @@ body {
   padding: 1rem;
 }
 
+.nav-bar {
+  display: none;
+}
+
 .main {
   color: #fff;
   display: flex;
@@ -40,7 +44,7 @@ body {
   width: 100%;
   background-image: url(./images/bg-to-right.png);
   background-repeat: no-repeat;
-  background-position-y: 125%;
+  background-position-y: 120%;
   background-position-x: 100%;
 }
 
@@ -105,6 +109,7 @@ body {
 }
 
 .placeholder {
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -170,14 +175,18 @@ body {
 }
 
 .work-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background: #fff;
   padding-bottom: 120px;
+  width: 100%;
 }
 
 .wk-section {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  max-width: 327px;
   background-image: url(./images/Mask\ Group-bg-img.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -193,6 +202,10 @@ body {
   padding-top: 5rem;
   padding-bottom: 1rem;
   margin-left: 1rem;
+}
+
+.wk-section:hover .hidden {
+  visibility: hidden;
 }
 
 .prof-details {
@@ -223,16 +236,14 @@ body {
 .b-t-n-2 {
   margin-top: 14px;
   background: #ff6b00;
-  width: 100%;
   padding: 1rem;
   border: none;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 2rem;
 }
 
 .about-me {
@@ -458,6 +469,10 @@ button:disabled {
   color: #5b5957;
 }
 
+button.submit:active {
+  background: #e05304;
+}
+
 .submit {
   width: fit-content;
   place-items: center;
@@ -473,6 +488,9 @@ button:disabled {
 
 .footer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
@@ -480,7 +498,7 @@ button:disabled {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 10px;
 }
 
 .icons-for-footer {
@@ -488,12 +506,63 @@ button:disabled {
 }
 
 .bottom-line {
-  width: 40%;
+  width: 30%;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
-  justify-content: center;
-  margin-left: 120px;
   margin-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+/* Building responsive website start from below */
+
+@media only screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav-bar li {
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    text-decoration-line: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(./images/Desktops-header.png);
+    background-repeat: no-repeat;
+    background-size: 45% 100%;
+    gap: 50px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .para2 {
+    color: #fff;
+  }
+
+  .para3 {
+    width: 45%;
+    color: #f4f5f7;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
