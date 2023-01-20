@@ -105,8 +105,7 @@ section.my-work {
   width: 100%;
   height: 100%;
   grid-template-columns: column;
-  padding-left: 24px;
-  padding-top: 120px;
+  padding: 0 24px;
 }
 
 .recent {
@@ -202,7 +201,7 @@ section.my-work {
   display: flex;
   flex-direction: column;
   width: 327px;
-  background-image: url(./images/Mask\ Group-bg-img.png);
+  background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bd-desk-one.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -218,10 +217,6 @@ section.my-work {
   padding-top: 5rem;
   padding-bottom: 1rem;
   margin-left: 1rem;
-}
-
-.wk-section:hover .hidden {
-  visibility: hidden;
 }
 
 .prof-details {
@@ -250,7 +245,8 @@ section.my-work {
 }
 
 .b-t-n-2 {
-  margin-top: 14px;
+  margin-top: 20px;
+  height: 58px;
   background: #ff6b00;
   padding: 1rem;
   border: none;
@@ -379,10 +375,13 @@ section.my-work {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 0 24px;
 }
 
 .contact-details {
   width: 100%;
+  padding: 130px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,7 +389,6 @@ section.my-work {
 
 .paragraph_1 {
   width: 90%;
-  padding-top: 120px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -402,27 +400,12 @@ section.my-work {
 }
 
 .form {
-  width: 90%;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 124px;
-}
-
-.form ul {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.form li {
-  list-style-type: none;
-  width: 90%;
-  height: auto;
-  align-self: center;
-  margin: 12px;
 }
 
 input {
@@ -431,6 +414,7 @@ input {
 }
 
 textarea {
+  margin-top: 24px;
   color: #3c3a39;
   background: #fbf8f7;
 }
@@ -485,6 +469,10 @@ button:active {
   color: #fff;
 }
 
+.hide-desk {
+  display: none;
+}
+
 button:disabled {
   background: #f4f1f0;
   color: #5b5957;
@@ -531,12 +519,21 @@ button.submit:active {
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   margin-top: 5px;
 }
 
+.dp-row {
+  margin-top: 120px;
+}
+
 .separator {
-  display: none;
+  width: 100%;
+}
+
+.liner {
+  width: 100%;
+  padding: 0 24px;
 }
 
 /* Responsiveness start from below */
@@ -624,10 +621,10 @@ button.submit:active {
     gap: 24px;
   }
 
-  .separator {
-    display: block;
+  hr.separator {
     width: 100%;
-    height: 0;
+    height: 1px;
+    flex-grow: 1;
   }
 
   .recent-work {
@@ -673,6 +670,49 @@ button.submit:active {
     width: 100%;
   }
 
+  .wk-section {
+    position: relative;
+    height: 435px;
+    padding-top: 48px;
+    cursor: pointer;
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bd-desk-one.png);
+  }
+
+  .wk-section.dash {
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bg-dash.png);
+  }
+
+  .wk-section.web {
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bg-web.png);
+  }
+
+  .wk-section:hover {
+    background: url(./images/bd-desk-one.png);
+  }
+
+  .wk-section.dash:hover {
+    background: url(./images/bg-dash.png);
+  }
+
+  .wk-section.web:hover {
+    background: url(./images/bg-web.png);
+  }
+
+  .wk-section:hover .hidden {
+    visibility: hidden;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  .wk-section:hover .hide-btn {
+    display: block;
+    padding: 16px;
+    position: relative;
+    top: -45px;
+  }
+
   .about-me {
     padding: 0 80px;
     margin: 0 auto;
@@ -703,9 +743,43 @@ button.submit:active {
     justify-content: space-between;
   }
 
-  /* .code-first {
-    min-width: 282px;
-  } */
+  .contact-section {
+    padding: 0;
+  }
+
+  .contact-details {
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    align-items: start;
+    gap: 24px;
+    padding: 130px 10% 0;
+  }
+
+  .paragraph_1 {
+    max-width: 455px;
+    text-align: left;
+  }
+
+  .hide-desk {
+    display: block;
+  }
+
+  .hide-mob {
+    display: none;
+  }
+
+  .web {
+    padding-top: 90px;
+  }
+
+  .profession {
+    margin-top: 24px;
+  }
+
+  .submit {
+    align-self: start;
+  }
 }
 
 @media screen and (min-width: 980px) {
