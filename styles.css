@@ -269,7 +269,7 @@ section.my-work {
   background-image: url(./images/Frame-bg-right-btm.png);
   background-repeat: no-repeat;
   background-position-y: 22rem;
-  background-position-x: 13.5rem;
+  background-position-x: 100%;
 }
 
 .about {
@@ -315,14 +315,19 @@ section.my-work {
   border: 1px solid #fff;
   width: 90%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 140px;
+}
+
+.code-languages {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 0;
+  gap: 24px;
 }
 
 .code-first {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
-  margin-bottom: 120px;
   align-items: center;
 }
 
@@ -667,9 +672,55 @@ button.submit:active {
     grid-gap: 24px;
     width: 100%;
   }
+
+  .about-me {
+    padding: 0 80px;
+    margin: 0 auto;
+    background-image: url(./images/Frame-bg-right-btm.png);
+    background-repeat: no-repeat;
+    background-position-y: 7%;
+    background-position-x: 100%;
+  }
+
+  .know-about-me {
+    max-width: 566px;
+  }
+
+  .details-about-me {
+    max-width: 466px;
+    height: 148px;
+  }
+
+  .horizontal {
+    width: 95%;
+    margin-top: 80px;
+  }
+
+  .code-languages {
+    padding: 0 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* .code-first {
+    min-width: 282px;
+  } */
+}
+
+@media screen and (min-width: 980px) {
+  .about-me {
+    background-image: url(./images/Desktop-about.png);
+    background-position-y: 7%;
+    background-position-x: 150%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
+  .about-me {
+    background-position-x: 100%;
+  }
+
   .work-showcase {
     grid-template-columns: 1fr 1fr 1fr;
   }
