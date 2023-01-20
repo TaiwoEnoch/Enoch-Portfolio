@@ -20,14 +20,23 @@ body {
   text-decoration: none;
 }
 
-.navigation {
+header {
+  background-color: #3e3c3c;
   width: 100%;
+  height: 5rem;
+}
+
+.navigation {
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3e3c3c;
-  height: 5rem;
-  padding: 1rem;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: none;
 }
 
 .main {
@@ -40,7 +49,7 @@ body {
   width: 100%;
   background-image: url(./images/bg-to-right.png);
   background-repeat: no-repeat;
-  background-position-y: 125%;
+  background-position-y: 120%;
   background-position-x: 100%;
 }
 
@@ -86,14 +95,17 @@ body {
   list-style: none;
 }
 
-.my-work {
+section.my-work {
+  background: #fff;
+  width: 100%;
+}
+
+.container {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-columns: column;
-  background: #fff;
-  padding-left: 24px;
-  padding-top: 120px;
+  padding: 0 24px;
 }
 
 .recent {
@@ -105,7 +117,9 @@ body {
 }
 
 .placeholder {
+  max-width: 684%;
   margin-bottom: 20px;
+  max-height: 448px;
 }
 
 .recent-work {
@@ -115,9 +129,13 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  border-bottom: 1px solid #212121;
   width: 90%;
   align-self: center;
+}
+
+.stories-multiple {
+  display: flex;
+  flex-direction: column;
 }
 
 .Multi-Post {
@@ -170,17 +188,23 @@ body {
 }
 
 .work-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background: #fff;
   padding-bottom: 120px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .wk-section {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  background-image: url(./images/Mask\ Group-bg-img.png);
+  width: 327px;
+  background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bd-desk-one.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .profession {
@@ -221,18 +245,17 @@ body {
 }
 
 .b-t-n-2 {
-  margin-top: 14px;
+  margin-top: 20px;
+  height: 58px;
   background: #ff6b00;
-  width: 100%;
   padding: 1rem;
   border: none;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 2rem;
 }
 
 .about-me {
@@ -242,7 +265,7 @@ body {
   background-image: url(./images/Frame-bg-right-btm.png);
   background-repeat: no-repeat;
   background-position-y: 22rem;
-  background-position-x: 13.5rem;
+  background-position-x: 100%;
 }
 
 .about {
@@ -288,14 +311,19 @@ body {
   border: 1px solid #fff;
   width: 90%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 140px;
+}
+
+.code-languages {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 0;
+  gap: 24px;
 }
 
 .code-first {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
-  margin-bottom: 120px;
   align-items: center;
 }
 
@@ -347,10 +375,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 0 24px;
 }
 
 .contact-details {
   width: 100%;
+  padding: 130px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,7 +389,6 @@ body {
 
 .paragraph_1 {
   width: 90%;
-  padding-top: 120px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -370,27 +400,12 @@ body {
 }
 
 .form {
-  width: 90%;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 124px;
-}
-
-.form ul {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.form li {
-  list-style-type: none;
-  width: 90%;
-  height: auto;
-  align-self: center;
-  margin: 12px;
 }
 
 input {
@@ -399,6 +414,7 @@ input {
 }
 
 textarea {
+  margin-top: 24px;
   color: #3c3a39;
   background: #fbf8f7;
 }
@@ -453,9 +469,17 @@ button:active {
   color: #fff;
 }
 
+.hide-desk {
+  display: none;
+}
+
 button:disabled {
   background: #f4f1f0;
   color: #5b5957;
+}
+
+button.submit:active {
+  background: #e05304;
 }
 
 .submit {
@@ -473,6 +497,9 @@ button:disabled {
 
 .footer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
@@ -480,7 +507,7 @@ button:disabled {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 10px;
 }
 
 .icons-for-footer {
@@ -488,12 +515,294 @@ button:disabled {
 }
 
 .bottom-line {
-  width: 40%;
+  width: 30%;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
-  justify-content: center;
-  margin-left: 120px;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.dp-row {
+  margin-top: 120px;
+}
+
+.separator {
+  width: 100%;
+}
+
+.liner {
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* Responsiveness start from below */
+
+@media only screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+
+  .nav-bar {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    margin-right: 24px;
+  }
+
+  .navigation {
+    align-items: center;
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #fff;
+  }
+
+  .nav-bar li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    list-style: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(./images/Desktops-header.png);
+    background-repeat: no-repeat;
+    background-size: 45% 100%;
+    gap: 35px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 192px;
+  }
+
+  .para2 {
+    color: #fff;
+  }
+
+  .para3 {
+    width: 45%;
+    color: #f4f5f7;
+  }
+
+  .mail {
+    position: absolute;
+    align-self: center;
+    top: -4px;
+  }
+
+  .top-bar {
+    height: 25px;
+    width: 25px;
+  }
+
+  .alone {
+    height: 15px;
+    width: 15px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .dp-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+  }
+
+  hr.separator {
+    width: 100%;
+    height: 1px;
+    flex-grow: 1;
+  }
+
+  .recent-work {
+    text-align: left;
+    max-width: 315px;
+    align-self: center;
+    padding-bottom: 0;
+  }
+
+  .container {
+    display: grid;
+    width: 90%;
+    grid-template-columns: column;
+    background: #fff;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .recent {
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+    margin: 80px auto 0;
+  }
+
+  .stories-multiple {
+    max-width: 448px;
+  }
+
+  .placeholder {
+    flex-grow: 1;
+  }
+
+  .my-work h3 {
+    margin-bottom: 24px;
+  }
+
+  .work-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    grid-gap: 24px;
+    width: 100%;
+  }
+
+  .wk-section {
+    position: relative;
+    height: 435px;
+    padding-top: 48px;
+    cursor: pointer;
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bd-desk-one.png);
+  }
+
+  .wk-section.dash {
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bg-dash.png);
+  }
+
+  .wk-section.web {
+    background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.89) 0.84%), url(./images/bg-web.png);
+  }
+
+  .wk-section:hover {
+    background: url(./images/bd-desk-one.png);
+  }
+
+  .wk-section.dash:hover {
+    background: url(./images/bg-dash.png);
+  }
+
+  .wk-section.web:hover {
+    background: url(./images/bg-web.png);
+  }
+
+  .wk-section:hover .hidden {
+    visibility: hidden;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  .wk-section:hover .hide-btn {
+    display: block;
+    padding: 16px;
+    position: relative;
+    top: -45px;
+  }
+
+  .about-me {
+    padding: 0 80px;
+    margin: 0 auto;
+    background-image: url(./images/Frame-bg-right-btm.png);
+    background-repeat: no-repeat;
+    background-position-y: 7%;
+    background-position-x: 100%;
+  }
+
+  .know-about-me {
+    max-width: 566px;
+  }
+
+  .details-about-me {
+    max-width: 466px;
+    height: 148px;
+  }
+
+  .horizontal {
+    width: 95%;
+    margin-top: 80px;
+  }
+
+  .code-languages {
+    padding: 0 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-section {
+    padding: 0;
+  }
+
+  .contact-details {
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    align-items: start;
+    gap: 24px;
+    padding: 130px 10% 0;
+  }
+
+  .paragraph_1 {
+    max-width: 455px;
+    text-align: left;
+  }
+
+  .hide-desk {
+    display: block;
+  }
+
+  .hide-mob {
+    display: none;
+  }
+
+  .web {
+    padding-top: 90px;
+  }
+
+  .profession {
+    margin-top: 24px;
+  }
+
+  .submit {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-me {
+    background-image: url(./images/Desktop-about.png);
+    background-position-y: 7%;
+    background-position-x: 150%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .about-me {
+    background-position-x: 100%;
+  }
+
+  .work-showcase {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .work-showcase {
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
