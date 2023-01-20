@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio-setup-mobile-first</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,7 +19,7 @@
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">contact</a></li>
-        <li><img src="./images/Icon-Mail.png"></li>
+        <li><img src="./images/Icon-Mail.png" class="mail"></li>
       </ul>
       <img src="./images/Union.png" class="mobile">
     </nav>
@@ -33,90 +33,97 @@
     </div>
     <div class="icon">
       <ul class="link">
-        <li><a href="https://github.com/TaiwoEnoch"><img src="./images/Frame.png"></a></li>
-        <li><a href="#"><img src="./images/linkdln-icon.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/taiwo-enoch"><img src="./images/Enabled.png"></a></li>
-        <li><a href="https://twitter.com/TaiwoEnoch4"><img src="./images/twitter-icon.png"></a></li>
-        <li><a href="https://medium.com/@taiwoenoch0"><img src="./images/Disabled.png"></a></li>
+        <li><a href="https://github.com/TaiwoEnoch"><img src="./images/Frame.png" class="alone"></a></li>
+        <li><a href="#"><img src="./images/linkdln-icon.png" class="top-bar"></a></li>
+        <li><a href="https://www.linkedin.com/in/taiwo-enoch"><img src="./images/Enabled.png" class="top-bar"></a></li>
+        <li><a href="https://twitter.com/TaiwoEnoch4"><img src="./images/twitter-icon.png" class="top-bar"></a></li>
+        <li><a href="https://medium.com/@taiwoenoch0"><img src="./images/Disabled.png" class="top-bar"></a></li>
      </ul>
     </div>
   </section>
   <section class="my-work">
-    <h2 class="recent-work">My Recent Works</h2>
-    <div class="recent">
-      <img src="./images/Img Placeholder-middle.png" class="placeholder">
-      <h3 class="Multi-Post">Multi-Post Stories</h3>
-      <p class="about-work">
-        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-      </p>
-      <ul class="list-of-lang">
-        <li class="list-language">css</li>
-        <li class="list-language">html</li>
-        <li class="list-language">bootstrap</li>
-        <li class="list-language">Ruby</li>
-      </ul>
-      <button class="b-t-n-1">See Project</button>
-    </div>
-    <div class="work-showcase">
-      <div class="wk-section">
-        <h3 class="profession hidden">Professional Art <br>Printing Data</h3>
-        <p class="prof-details hidden">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list hidden">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
+    <div class="container">
+      <div class="dp-row">
+        <h2 class="recent-work">My Recent Works</h2>
+        <hr class="separator">
       </div>
-      <div class="wk-section">
-        <h3 class="profession">Professional Art <br>Printing Data</h3>
-        <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
+      <div class="recent">
+        <img src="./images/Img Placeholder-middle.png" class="placeholder">
+        <div class="stories-multiple">
+          <h3 class="Multi-Post">Multi-Post Stories</h3>
+          <p class="about-work">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="list-of-lang">
+            <li class="list-language">css</li>
+            <li class="list-language">html</li>
+            <li class="list-language">bootstrap</li>
+            <li class="list-language">Ruby</li>
+          </ul>
+          <button class="b-t-n-1">See Project</button>
+        </div>
       </div>
-      <div class="wk-section">
-        <h3 class="profession">Professional Art <br>Printing Data</h3>
-        <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
-      </div>
-      <div class="wk-section">
-        <h3 class="profession">Professional Art <br>Printing Data</h3>
-        <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
-      </div>
-      <div class="wk-section">
-        <h3 class="profession">Professional Art <br>Printing Data</h3>
-        <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
-      </div>
-      <div class="wk-section">
-        <h3 class="profession">Professional Art <br>Printing Data</h3>
-        <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="lang-list">
-          <li class="language">html</li>
-          <li class="language">bootstrap</li>
-          <li class="language">Ruby</li>
-        </ul>
-        <button class="b-t-n-2">See Project</button>
+      <div class="work-showcase">
+        <div class="wk-section">
+          <h3 class="profession hidden">Professional Art <br>Printing Data</h3>
+          <p class="prof-details hidden">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list hidden">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
+        <div class="wk-section">
+          <h3 class="profession">Professional Art <br>Printing Data</h3>
+          <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
+        <div class="wk-section">
+          <h3 class="profession">Professional Art <br>Printing Data</h3>
+          <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
+        <div class="wk-section">
+          <h3 class="profession">Professional Art <br>Printing Data</h3>
+          <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
+        <div class="wk-section">
+          <h3 class="profession">Professional Art <br>Printing Data</h3>
+          <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
+        <div class="wk-section">
+          <h3 class="profession">Professional Art <br>Printing Data</h3>
+          <p class="prof-details">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+          <ul class="lang-list">
+            <li class="language">html</li>
+            <li class="language">bootstrap</li>
+            <li class="language">Ruby</li>
+          </ul>
+          <button class="b-t-n-2">See Project</button>
+        </div>
       </div>
     </div>
   </section>
