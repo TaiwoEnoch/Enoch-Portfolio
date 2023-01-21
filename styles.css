@@ -122,6 +122,22 @@ section.my-work {
   max-height: 448px;
 }
 
+.placeholder {
+  animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .recent-work {
   padding-bottom: 30px;
   text-align: center;
