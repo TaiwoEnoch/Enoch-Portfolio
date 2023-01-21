@@ -120,9 +120,6 @@ section.my-work {
   max-width: 684%;
   margin-bottom: 20px;
   max-height: 448px;
-}
-
-.placeholder {
   animation: 3s infinite alternate slidein;
 }
 
@@ -468,7 +465,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
   transition-property: font-size;
-  transition: 2s;
+  transition-duration: 2s;
 }
 
 button:visited {
