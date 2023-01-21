@@ -467,6 +467,8 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+  transition-property: font-size;
+  transition: 2s;
 }
 
 button:visited {
@@ -478,6 +480,7 @@ button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  font-size: 20px;
 }
 
 button:active {
