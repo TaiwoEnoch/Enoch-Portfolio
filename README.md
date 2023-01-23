@@ -130,7 +130,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Live link**
+- [ ] https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/
 - [ ] **More styling and accurate responsiveness**
 - [ ] **More UI elements**
 
