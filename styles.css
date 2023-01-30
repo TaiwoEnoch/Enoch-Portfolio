@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+li {
+  list-style: none;
+}
+
 .logo {
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -50,14 +54,30 @@ header {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: lightblue;
-  padding: 1em 0.7em;
+  background-color: #3c3a39;
+  padding: 1.25em 0.75em;
   color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+.flex-end {
+  align-self: flex-end;
+  font-size: 1rem;
 }
 
 .mobile-menu-link {
   color: #fff;
   list-style: inherit;
+}
+
+.mobile-menu-link > li {
+  padding: 0.25em 0.75em;
+  border-bottom: 1px solid #6f6c6b;
+  margin: 1.5em 0;
 }
 
 a {
