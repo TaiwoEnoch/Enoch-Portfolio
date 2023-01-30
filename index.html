@@ -10,18 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/845ab240d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header
     <nav class="navigation">
+      <div id="mobile-menu" class="mobile-menu-show">
+        <i id="mobile-menu-icon" class="fa-solid fa-x"></i>
+        <ul class="mobile-menu-link">
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
       <a href="https://github.com/TaiwoEnoch" class="logo">Enoch</a>
-      <ul class="nav-bar">
+      <ul id="navbar-links" class="nav-bar">
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">contact</a></li>
         <li><img src="./images/Icon-Mail.png" class="mail"></li>
       </ul>
-      <img src="./images/Union.png" class="mobile">
+      <img src="./images/Union.png" id="toggle-button" class="mobile">
     </nav>
   </header>
   <section class="main">
@@ -194,5 +203,6 @@
       <div class="bottom-line hide-mob"></div>
     </div>
   </section>
+  <script src="main.js"></script>
 </body>
 </html>
