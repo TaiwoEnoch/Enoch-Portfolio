@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1c1a19;
-  position: relative;
+  /* position: relative; */
 }
 
 li {
@@ -38,6 +38,12 @@ header {
   justify-content: space-between;
   height: inherit;
   margin: 0 auto;
+}
+
+.my-nav-bar {
+  background-color: #3e3c3c;
+  width: 100%;
+  height: 5rem;
 }
 
 .mobile-menu-hide {
