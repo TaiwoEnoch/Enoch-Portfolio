@@ -60,8 +60,8 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: #3c3a39;
-  padding: 1.25em 0.75em;
-  color: #fff;
+  padding: 0.5em 0.75em;
+  color: #fff5e1;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -71,23 +71,19 @@ header {
 
 .flex-end {
   align-self: flex-end;
+  color: #979493;
   font-size: 1rem;
 }
 
-.mobile-menu-link {
-  color: #fff;
-  list-style: inherit;
-}
-
 .mobile-menu-link > li {
-  padding: 0.25em 0.75em;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #6f6c6b;
-  margin: 1.5em 0;
+  margin: 1rem 0.5rem;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #fff5e1;
 }
 
 .nav-bar {
@@ -610,6 +606,10 @@ button.submit:active {
 
 @media only screen and (min-width: 700px) {
   .mobile {
+    display: none;
+  }
+
+  #mobile-menu {
     display: none;
   }
 

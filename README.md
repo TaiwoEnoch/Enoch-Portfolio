@@ -79,7 +79,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-This link is not available now.
+https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/
+- [ ] **Add live link of the portfolio**
 - [ ] **More styling and accurate responsiveness**
 - [ ] **More UI elements**
 
