@@ -90,6 +90,14 @@ a {
   display: none;
 }
 
+@media only screen and (max-width: 700px) {
+  .heading-data-popup,
+  .details-menu-popup,
+  .desktop-snap-popup {
+    display: none;
+  }
+}
+
 .main {
   color: #fff;
   display: flex;
@@ -212,7 +220,6 @@ section.my-work {
 
 .about-work {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -602,11 +609,134 @@ button.submit:active {
   padding: 0 24px;
 }
 
-/* Responsiveness start from below */
+/* Details.html styles start here */
+
+.full-details {
+  min-width: 375px;
+  height: 100%;
+  background: #979493;
+}
+
+.combination {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.heading-data {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.div-for-details {
+  width: 95%;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.main-heading-detailed {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-menu {
+  color: #67798e;
+}
+
+.new-list {
+  gap: 12px;
+  padding: 1rem 0;
+}
+
+.code-list {
+  border: 1px solid #979493;
+  padding: 0.5rem;
+}
+
+.deatail-words {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 12px 0;
+}
+
+.details-button,
+.details-button-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+}
+
+.snap-shot {
+  min-width: 100%;
+}
+
+.div-for-button {
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+/* Details.html styles Ends here */
+
+/* Responsiveness starts below */
 
 @media only screen and (min-width: 700px) {
-  .mobile {
+  .mobile,
+  .heading-data,
+  #detailes-menu-icon,
+  .mobile-snap-popup,
+  .div-for-button {
     display: none;
+  }
+
+  .deatail-words-popup {
+    justify-self: flex-start;
+  }
+
+  .paragraph-popup {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    padding-bottom: 1.5rem;
+  }
+
+  .main-heading-detailed-popup {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .snapshot-image-popup {
+    gap: 1rem;
+  }
+
+  .snap-shot-popup {
+    max-width: 750%;
+    margin-bottom: 20px;
+    max-height: 448px;
+  }
+
+  .heading-data-popup {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
   }
 
   #mobile-menu {
