@@ -520,8 +520,8 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  transition-property: font-size;
-  transition-duration: 2s;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 button:visited {
@@ -619,7 +619,7 @@ button.submit:active {
   display: block;
   min-width: 375px;
   height: 100%;
-  background: #979493;
+  background: rgba(103, 103, 103, 0.2);
   left: 0;
   right: 0;
 }
