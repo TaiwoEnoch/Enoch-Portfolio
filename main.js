@@ -20,3 +20,16 @@ mobileMenuLinks.addEventListener('click', () => {
     mobileMenu.className = 'mobile-menu-hide';
   }
 });
+// Details popup starts here
+const checkProject = document.getElementById('check-project-popup');
+const cardDetails = document.getElementById('card-details');
+
+checkProject.addEventListener('click', () => {
+  cardDetails.classList.toggle('full-details-show');
+});
+
+const detailCardOff = document.getElementById('detail-card-off');
+detailCardOff.addEventListener('click', () => {
+  cardDetails.classList.toggle('full-details-show');
+});
+// Details popup ends here
