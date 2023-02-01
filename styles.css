@@ -628,6 +628,10 @@ button.submit:active {
   right: 0;
 }
 
+.deatails-popup-img {
+  width: 100%;
+}
+
 .combination {
   display: flex;
   justify-content: center;
