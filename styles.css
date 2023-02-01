@@ -11,6 +11,10 @@ body {
   background-color: #1c1a19;
 }
 
+li {
+  list-style: none;
+}
+
 .logo {
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -33,6 +37,53 @@ header {
   justify-content: space-between;
   height: inherit;
   margin: 0 auto;
+}
+
+.my-nav-bar {
+  background-color: #3e3c3c;
+  width: 100%;
+  height: 5rem;
+}
+
+.mobile-menu-hide {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.mobile-menu-show {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3c3a39;
+  padding: 0.5em 0.75em;
+  color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+.flex-end {
+  align-self: flex-end;
+  color: #979493;
+  font-size: 1rem;
+}
+
+.mobile-menu-link > li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #6f6c6b;
+  margin: 1rem 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff5e1;
 }
 
 .nav-bar {
@@ -554,6 +605,10 @@ button.submit:active {
     display: none;
   }
 
+  #mobile-menu {
+    display: none;
+  }
+
   .nav-bar {
     position: relative;
     display: flex;
@@ -648,7 +703,6 @@ button.submit:active {
   .container {
     display: grid;
     width: 90%;
-    grid-template-columns: column;
     background: #fff;
     padding-left: 0;
     margin: 0 auto;

@@ -10,19 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/845ab240d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <nav class="navigation">
-      <a href="https://github.com/TaiwoEnoch" class="logo">Enoch</a>
-      <ul class="nav-bar">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">contact</a></li>
-        <li><img src="./images/Icon-Mail.png" class="mail"></li>
-      </ul>
-      <img src="./images/Union.png" class="mobile">
-    </nav>
+    <div class="my-nav-bar">
+      <nav class="navigation">
+        <a href="https://github.com/TaiwoEnoch" class="logo">Enoch</a>
+        <ul id="navbar-links" class="nav-bar">
+          <li><a href="#my-work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><img src="./images/Icon-Mail.png" class="mail"></li>
+        </ul>
+          <img src="./images/Union.png"  id="toggle-button" class="mobile">
+      </nav>
+      <div id="mobile-menu" class="mobile-menu-hide">
+        <i id="mobile-menu-icon" class="fa-solid fa-x flex-end"></i>
+        <ul id="mobile-menu-links" class="mobile-menu-link">
+          <li><a href="#my-work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
   <section class="main">
     <div class="intro">
@@ -41,7 +52,7 @@
      </ul>
     </div>
   </section>
-  <section class="my-work">
+  <section id="my-work" class="my-work">
     <div class="container">
       <div class="dp-row">
         <h2 class="recent-work">My Recent Works</h2>
@@ -131,7 +142,7 @@
       </div>
     </div>
   </section>
-  <section class="about-me">
+  <section id="about" class="about-me">
     <div class="know-about-me">
       <h2 class="about">About me</h2>
       <p class="details-about-me">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
@@ -171,7 +182,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="contact-details">
       <h2 class="paragraph_1">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action="https://formspree.io/f/xjvdkoyw" method="post">
@@ -194,5 +205,6 @@
       <div class="bottom-line hide-mob"></div>
     </div>
   </section>
+  <script src="main.js"></script>
 </body>
 </html>
