@@ -617,18 +617,26 @@ button.submit:active {
 
 /* Details.html styles start here */
 
+/* Details.html styles start here */
+
 .full-details {
   display: none;
 }
 
 .full-details-show {
-  position: absolute;
+  position: relative;
   display: block;
   min-width: 375px;
   height: 100%;
-  background: rgba(103, 103, 103, 0.2);
+  background: #c1c7d090;
+  backdrop-filter: blur(4px);
   left: 0;
   right: 0;
+  z-index: 9;
+}
+
+.deatails-popup-img {
+  width: 100%;
 }
 
 .combination {
@@ -704,6 +712,17 @@ button.submit:active {
   width: 100%;
 }
 
+/* .projects {
+  position: fixed;
+  background: #c1c7d090;
+  backdrop-filter: blur(4px);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+} */
+
 /* Details.html styles Ends here */
 
 /* Responsiveness starts below */
@@ -713,46 +732,6 @@ button.submit:active {
   .paragraph-mobile-popup,
   .heading-data {
     display: none;
-  }
-
-  .flex-one {
-    flex: 1;
-  }
-
-  .deatail-words {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    justify-content: space-between;
-    padding-bottom: 0;
-  }
-
-  .mobile-snap-popup {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .heading-desktop-data-popup {
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
-  }
-
-  .div-for-button {
-    justify-content: flex-start;
-    gap: 1rem;
-  }
-
-  .paragraph-desktop-popup {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #344563;
   }
 
   .flex-one {
