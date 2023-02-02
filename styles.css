@@ -90,10 +90,6 @@ a {
   display: none;
 }
 
-@media screen {
-  
-}
-
 .main {
   color: #fff;
   display: flex;
@@ -626,7 +622,7 @@ button.submit:active {
   overflow-y: auto;
 }
 
-.deatails-popup-img {
+.details-popup-img {
   width: 100%;
 }
 
@@ -676,7 +672,7 @@ button.submit:active {
   padding: 0.5rem;
 }
 
-.deatail-words {
+.detail-words {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
