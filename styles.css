@@ -90,19 +90,9 @@ a {
   display: none;
 }
 
-/* @media only screen and (max-width: 700px) {
-  .paragraph-desktop-popup,
-  .heading-desktop-data-popup {
-    display: none;
-  }
+@media screen {
+  
 }
-
-@media only screen and (max-width: 700px) {
-  .paragraph-desktop-popup,
-  .heading-desktop-data-popup {
-    display: none;
-  }
-} */
 
 .main {
   color: #fff;
@@ -624,13 +614,11 @@ button.submit:active {
 }
 
 .full-details-show {
-  /* position: relative; */
   position: fixed;
   display: block;
   min-width: 375px;
   height: 100%;
   background: #c1c7d090;
-  backdrop-filter: blur(4px);
   top: 0;
   left: 0;
   right: 0;
@@ -717,16 +705,11 @@ button.submit:active {
   width: 100%;
 }
 
-/* .projects {
-  position: fixed;
-  background: #c1c7d090;
-  backdrop-filter: blur(4px);
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-} */
+@media only screen and (max-width: 700px) {
+  .heading-desktop-data-popup {
+    display: none;
+  }
+}
 
 /* Details.html styles Ends here */
 

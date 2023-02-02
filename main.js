@@ -132,8 +132,8 @@ detailPopuop.id = 'card-details-0';
 detailPopuop.innerHTML = `<div class='combination'>
   <div class='div-for-details d-flex'>
     <div class='main-heading-detailed d-flex'>
-        <p class='heading-data'>Multi-Post Stories</p>
-        <p class='heading-desktop-data-popup'>Multi-Post Stories</p>
+    <p class='heading-data'>Multi-Post Stories</p>
+    <p class='heading-desktop-data-popup'>Multi-Post Stories</p>
         <nav class='switch-off'></nav>
           <i id='detail-card-off-0' class='fa-solid fa-x details-menu'></i>
         </nav>
