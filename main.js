@@ -124,6 +124,51 @@ projects.forEach((project, index) => {
   card.appendChild(detailPopuop);
 });
 
+const recent = document.getElementById('recent');
+
+const detailPopuop = document.createElement('section');
+detailPopuop.classList.add('full-details');
+detailPopuop.id = 'card-details-0';
+detailPopuop.innerHTML = `<div class='combination'>
+  <div class='div-for-details d-flex'>
+    <div class='main-heading-detailed d-flex'>
+        <p class='heading-data'>Multi-Post Stories</p>
+        <p class='heading-desktop-data-popup'>Multi-Post Stories</p>
+        <nav class='switch-off'></nav>
+          <i id='detail-card-off-0' class='fa-solid fa-x details-menu'></i>
+        </nav>
+    </div>
+    <ul class='new-list d-flex'>
+    <li class='code-list'>HTML</li>
+    <li class='code-list'>CSS</li>
+    <li class='code-list'>Bootstrap</li>
+    <li class='code-list'>Ruby</li>
+    </ul>
+    <div class='everything-details'>
+      <div class='mobile-snap-popup'>
+        <div class='snapshot-image flex-one'>
+          <img class='deatails-popup-img' src='./images/Img Placeholder-middle.png' class='snap-shot'>
+        </div>
+        <div class='deatail-words flex-one'>
+          <p class='paragraph-desktop-popup'>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+          <div class='div-for-button d-flex'>
+            <a href='#' class='details-button'>
+              See Live
+              <img src='./images/see-live.png'>
+            </a>
+            <a href='#' class='details-button-btn'>
+              See Source
+              <img src='./images/src-gitHub.png'>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>`;
+recent.appendChild(detailPopuop);
+
+const seePopup0 = document.getElementById('see-popup-0');
 const seePopup1 = document.getElementById('see-popup-1');
 const seePopup2 = document.getElementById('see-popup-2');
 const seePopup3 = document.getElementById('see-popup-3');
@@ -131,6 +176,7 @@ const seePopup4 = document.getElementById('see-popup-4');
 const seePopup5 = document.getElementById('see-popup-5');
 const seePopup6 = document.getElementById('see-popup-6');
 
+const detailCardOff0 = document.getElementById('detail-card-off-0');
 const detailCardOff1 = document.getElementById('detail-card-off-1');
 const detailCardOff2 = document.getElementById('detail-card-off-2');
 const detailCardOff3 = document.getElementById('detail-card-off-3');
@@ -138,12 +184,23 @@ const detailCardOff4 = document.getElementById('detail-card-off-4');
 const detailCardOff5 = document.getElementById('detail-card-off-5');
 const detailCardOff6 = document.getElementById('detail-card-off-6');
 
+const cardDetails0 = document.getElementById('card-details-0');
 const cardDetails1 = document.getElementById('card-details-1');
 const cardDetails2 = document.getElementById('card-details-2');
 const cardDetails3 = document.getElementById('card-details-3');
 const cardDetails4 = document.getElementById('card-details-4');
 const cardDetails5 = document.getElementById('card-details-5');
 const cardDetails6 = document.getElementById('card-details-6');
+
+// 1 starts
+seePopup0.addEventListener('click', () => {
+  cardDetails0.classList.toggle('full-details-show');
+});
+
+detailCardOff0.addEventListener('click', () => {
+  cardDetails0.classList.toggle('full-details-show');
+});
+// 0 ends
 
 // 1 starts
 seePopup1.addEventListener('click', () => {
