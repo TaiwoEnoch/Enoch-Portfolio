@@ -151,6 +151,7 @@ seeProjectButtons.forEach((button) => {
     checkID(projectId);
   });
 });
+
 // Details popup ends here
 
 // Contact Validation
