@@ -122,10 +122,11 @@
   <section id="contact" class="contact-section">
     <div class="contact-details">
       <h2 class="paragraph_1">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form class="form" action="https://formspree.io/f/xjvdkoyw" method="post">
-        <input name="full name" type="text" placeholder="Full Name" maxlength="30" required>
-        <input name="Email" type="email" id="email   " placeholder="Email address" required>
-        <textarea name="Comment" placeholder="Enter text here" rows="5" maxlength="500" required></textarea>
+      <form id="contact-form" class="form" action="https://formspree.io/f/xjvdkoyw" method="post">
+        <input name="fullname" type="text" placeholder="Full Name" maxlength="30">
+        <input name="email" id="email" placeholder="Email address">
+        <textarea name="comment" placeholder="Enter text here" rows="5" maxlength="500"></textarea>
+        <p id="error-msg" class="error-msg--hidden">error</p>
         <button type="submit" class="submit hide-mob">Submit</button>
         <button type="submit" class="submit hide-desk">Get in touch</button>
       </form>

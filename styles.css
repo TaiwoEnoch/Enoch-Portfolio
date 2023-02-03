@@ -464,7 +464,7 @@ section.my-work {
 
 .form {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,6 +504,20 @@ textarea {
   line-height: 160%;
   border: none;
   padding: 12px;
+}
+
+.error-msg--hidden {
+  display: none;
+}
+
+.error-msg--show {
+  display: inline;
+  align-self: flex-start;
+  width: auto;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: inherit;
 }
 
 button {

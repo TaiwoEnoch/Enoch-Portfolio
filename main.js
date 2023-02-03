@@ -169,4 +169,19 @@ document.querySelector('.b-t-n-1').addEventListener('click', () => {
 
 // Details popup ends here
 
-// Contact Validation
+// Contact Validation starts here
+const contactForm = document.getElementById('contact-form');
+const contactFormError = document.getElementById('error-msg');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (contactForm.elements.fullname.value.trim() === '') {
+    contactFormError.innerText = 'Please enter your name';
+    contactFormError.classList.add('error-msg--show');
+  } else if (!emailRegex.test(contactForm.elements.email.value.trim())) {
+    contactFormError.innerText = 'Please enter your email in lower case';
+    contactFormError.classList.add('error-msg--show');
+  } 
+});
+// Contact Validation ends here
