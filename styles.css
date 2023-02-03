@@ -644,7 +644,7 @@ button.submit:active {
 }
 
 .div-for-details {
-  width: 95%;
+  width: 90%;
   flex-direction: column;
   background-color: #fff;
   padding: 2rem 1rem;
@@ -676,6 +676,9 @@ button.submit:active {
   line-height: 24px;
   color: #344563;
   padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .details-button,

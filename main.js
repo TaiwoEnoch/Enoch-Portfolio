@@ -28,6 +28,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bd-desk-one.png',
   projectDescription: '1 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
@@ -36,6 +37,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-dash.png',
   projectDescription: '2 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
@@ -44,6 +46,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-web.png',
   projectDescription: '3 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
@@ -52,6 +55,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bd-desk-one.png',
   projectDescription: '4 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
@@ -60,6 +64,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-dash.png',
   projectDescription: '5 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
@@ -68,6 +73,7 @@ const projects = [{
   projectLang: ['html', 'bootstrap', 'Ruby', 'js'],
   featureImg: './images/bg-web.png',
   projectDescription: '6 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  projectModalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }];
@@ -83,7 +89,7 @@ projects.forEach((project, index) => {
   <ul class='lang-list hidden'>
     ${languages}
   </ul>
-  <button id='see-popup-${project.projectIndex}' class='b-t-n-2 hide-btn'>See Project</button>`;
+  <button id='see-popup-${project.projectIndex}' class='b-t-n-2 hide-btn show'>See Project</button>`;
   list.appendChild(item);
 });
 
@@ -110,7 +116,7 @@ const createPopUpComponent = (project) => {
           <img class='details-popup-img' src='${project.featureImg}' class='snap-shot'>
         </div>
         <div class='detail-words flex-one'>
-          <p class='paragraph-desktop-popup'>${project.projectDescription}</p>
+          <p class='paragraph-desktop-popup'>${project.projectModalDescription}</p>
           <div class='div-for-button d-flex'>
             <a href='${project.seeLive}' class='details-button'>
               See Live
@@ -148,13 +154,17 @@ const checkID = (id) => {
   });
 };
 
-const seeProjectButtons = document.querySelectorAll('.b-t-n-2');
+const seeProjectButtons = document.querySelectorAll('.show');
 
 seeProjectButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     const projectId = e.target.parentElement.id;
     checkID(projectId);
   });
+});
+
+document.querySelector('.b-t-n-1').addEventListener('click', () => {
+  displayPopUp(projects[0]);
 });
 
 // Details popup ends here
