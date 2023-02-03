@@ -23,6 +23,7 @@ mobileMenuLinks.addEventListener('click', () => {
 // Details popup starts here
 
 const projects = [{
+  projectIndex: 'showcase-work-1',
   projectName: 'Professional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bd-desk-one.png',
@@ -30,6 +31,7 @@ const projects = [{
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
+  projectIndex: 'showcase-work-2',
   projectName: 'Data Dashboard Healthcare',
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-dash.png',
@@ -37,6 +39,7 @@ const projects = [{
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
+  projectIndex: 'showcase-work-3',
   projectName: 'Website Portfolio',
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-web.png',
@@ -44,6 +47,7 @@ const projects = [{
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
+  projectIndex: 'showcase-work-4',
   projectName: 'Professional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bd-desk-one.png',
@@ -51,6 +55,7 @@ const projects = [{
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
+  projectIndex: 'showcase-work-5',
   projectName: 'Data Dashboard Healthcare',
   projectLang: ['html', 'bootstrap', 'Ruby'],
   featureImg: './images/bg-dash.png',
@@ -58,6 +63,7 @@ const projects = [{
   seeLive: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
   seeSource: 'https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/',
 }, {
+  projectIndex: 'showcase-work-6',
   projectName: 'Website Portfolio',
   projectLang: ['html', 'bootstrap', 'Ruby', 'js'],
   featureImg: './images/bg-web.png',
@@ -67,7 +73,7 @@ const projects = [{
 }];
 
 projects.forEach((project, index) => {
-  const laguages = project.projectLang.map((lang) => `<li id='show-card-${index + 1}' class='language'>${lang}</li>`).join('');
+  const languages = project.projectLang.map((lang) => `<li id='show-card-${index + 1}' class='language'>${lang}</li>`).join('');
   const list = document.getElementById('work-showcase');
   const item = document.createElement('div');
   item.classList.add('wk-section');
@@ -75,36 +81,35 @@ projects.forEach((project, index) => {
   item.innerHTML = `<h3 class='profession hidden'>${project.projectName}</h3>
   <p class='prof-details hidden'>${project.projectDescription}</p>
   <ul class='lang-list hidden'>
-    ${laguages}
+    ${languages}
   </ul>
-  <button id='see-popup-${index + 1}' class='b-t-n-2 hide-btn'>See Project</button>`;
+  <button id='see-popup-${project.projectIndex}' class='b-t-n-2 hide-btn'>See Project</button>`;
   list.appendChild(item);
 });
 
-projects.forEach((project, index) => {
-  const laguages = project.projectLang.map((lang) => `<li class='code-list'>${lang}</li>`).join('');
-  const card = document.getElementById('body');
-  const detailPopuop = document.createElement('section');
-  detailPopuop.classList.add('full-details');
-  detailPopuop.id = `card-details-${index + 1}`;
-  detailPopuop.innerHTML = `<div class='combination'>
+const createPopUpComponent = (project) => {
+  const languages = project.projectLang.map((lang) => `<li class='code-list'>${lang}</li>`).join('');
+  const detailPopup = document.createElement('section');
+  detailPopup.classList.add('full-details');
+  detailPopup.id = `card-details-${1}`;
+  detailPopup.innerHTML = `<div class='combination'>
   <div class='div-for-details d-flex'>
     <div class='main-heading-detailed d-flex'>
         <p class='heading-data'>${project.projectName}</p>
         <p class='heading-desktop-data-popup'>${project.projectName}</p>
         <nav class='switch-off'></nav>
-          <i id='detail-card-off-${index + 1}' class='fa-solid fa-x details-menu'></i>
+          <i id='detail-card-off-${1}' class='fa-solid fa-x details-menu'></i>
         </nav>
     </div>
     <ul class='new-list d-flex'>
-      ${laguages}
+      ${languages}
     </ul>
     <div class='everything-details'>
       <div class='mobile-snap-popup'>
         <div class='snapshot-image flex-one'>
-          <img class='deatails-popup-img' src='${project.featureImg}' class='snap-shot'>
+          <img class='details-popup-img' src='${project.featureImg}' class='snap-shot'>
         </div>
-        <div class='deatail-words flex-one'>
+        <div class='detail-words flex-one'>
           <p class='paragraph-desktop-popup'>${project.projectDescription}</p>
           <div class='div-for-button d-flex'>
             <a href='${project.seeLive}' class='details-button'>
@@ -121,145 +126,31 @@ projects.forEach((project, index) => {
     </div>
   </div>
   </div>`;
-  card.appendChild(detailPopuop);
+  return detailPopup;
+};
+
+const displayPopUp = (project) => {
+  const body = document.querySelector('body');
+  const popup = createPopUpComponent(project);
+  body.appendChild(popup);
+};
+
+const checkID = (id) => {
+  projects.forEach((pro, index) => {
+    if (id === pro.projectIndex) {
+      displayPopUp(projects[index]);
+    }
+  });
+};
+
+const seeProjectButtons = document.querySelectorAll('.b-t-n-2');
+
+seeProjectButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const projectId = e.target.parentElement.id;
+    checkID(projectId);
+  });
 });
-
-const recent = document.getElementById('recent');
-
-const detailPopuop = document.createElement('section');
-detailPopuop.classList.add('full-details');
-detailPopuop.id = 'card-details-0';
-detailPopuop.innerHTML = `<div class='combination'>
-  <div class='div-for-details d-flex'>
-    <div class='main-heading-detailed d-flex'>
-    <p class='heading-data'>Multi-Post Stories</p>
-    <p class='heading-desktop-data-popup'>Multi-Post Stories</p>
-        <nav class='switch-off'></nav>
-          <i id='detail-card-off-0' class='fa-solid fa-x details-menu'></i>
-        </nav>
-    </div>
-    <ul class='new-list d-flex'>
-    <li class='code-list'>HTML</li>
-    <li class='code-list'>CSS</li>
-    <li class='code-list'>Bootstrap</li>
-    <li class='code-list'>Ruby</li>
-    </ul>
-    <div class='everything-details'>
-      <div class='mobile-snap-popup'>
-        <div class='snapshot-image flex-one'>
-          <img class='deatails-popup-img' src='./images/Img Placeholder-middle.png' class='snap-shot'>
-        </div>
-        <div class='deatail-words flex-one'>
-          <p class='paragraph-desktop-popup'>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-          <div class='div-for-button d-flex'>
-            <a href='#' class='details-button'>
-              See Live
-              <img src='./images/see-live.png'>
-            </a>
-            <a href='#' class='details-button-btn'>
-              See Source
-              <img src='./images/src-gitHub.png'>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>`;
-recent.appendChild(detailPopuop);
-
-const seePopup0 = document.getElementById('see-popup-0');
-const seePopup1 = document.getElementById('see-popup-1');
-const seePopup2 = document.getElementById('see-popup-2');
-const seePopup3 = document.getElementById('see-popup-3');
-const seePopup4 = document.getElementById('see-popup-4');
-const seePopup5 = document.getElementById('see-popup-5');
-const seePopup6 = document.getElementById('see-popup-6');
-
-const detailCardOff0 = document.getElementById('detail-card-off-0');
-const detailCardOff1 = document.getElementById('detail-card-off-1');
-const detailCardOff2 = document.getElementById('detail-card-off-2');
-const detailCardOff3 = document.getElementById('detail-card-off-3');
-const detailCardOff4 = document.getElementById('detail-card-off-4');
-const detailCardOff5 = document.getElementById('detail-card-off-5');
-const detailCardOff6 = document.getElementById('detail-card-off-6');
-
-const cardDetails0 = document.getElementById('card-details-0');
-const cardDetails1 = document.getElementById('card-details-1');
-const cardDetails2 = document.getElementById('card-details-2');
-const cardDetails3 = document.getElementById('card-details-3');
-const cardDetails4 = document.getElementById('card-details-4');
-const cardDetails5 = document.getElementById('card-details-5');
-const cardDetails6 = document.getElementById('card-details-6');
-
-// 1 starts
-seePopup0.addEventListener('click', () => {
-  cardDetails0.classList.toggle('full-details-show');
-});
-
-detailCardOff0.addEventListener('click', () => {
-  cardDetails0.classList.toggle('full-details-show');
-});
-// 0 ends
-
-// 1 starts
-seePopup1.addEventListener('click', () => {
-  cardDetails1.classList.toggle('full-details-show');
-});
-
-detailCardOff1.addEventListener('click', () => {
-  cardDetails1.classList.toggle('full-details-show');
-});
-// 1 ends
-
-// 2 starts
-seePopup2.addEventListener('click', () => {
-  cardDetails2.classList.toggle('full-details-show');
-});
-
-detailCardOff2.addEventListener('click', () => {
-  cardDetails2.classList.toggle('full-details-show');
-});
-// 2 ends
-
-// 3 starts
-seePopup3.addEventListener('click', () => {
-  cardDetails3.classList.toggle('full-details-show');
-});
-
-detailCardOff3.addEventListener('click', () => {
-  cardDetails3.classList.toggle('full-details-show');
-});
-// 3 ends
-
-// 4 starts
-seePopup4.addEventListener('click', () => {
-  cardDetails4.classList.toggle('full-details-show');
-});
-
-detailCardOff4.addEventListener('click', () => {
-  cardDetails4.classList.toggle('full-details-show');
-});
-// 4 ends
-
-// 5 starts
-seePopup5.addEventListener('click', () => {
-  cardDetails5.classList.toggle('full-details-show');
-});
-
-detailCardOff5.addEventListener('click', () => {
-  cardDetails5.classList.toggle('full-details-show');
-});
-// 5 ends
-
-// 6 starts
-seePopup6.addEventListener('click', () => {
-  cardDetails6.classList.toggle('full-details-show');
-});
-
-detailCardOff6.addEventListener('click', () => {
-  cardDetails6.classList.toggle('full-details-show');
-});
-// 6 ends
-
 // Details popup ends here
+
+// Contact Validation

@@ -177,6 +177,7 @@ section.my-work {
   width: 90%;
   align-self: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .placeholder {
@@ -605,9 +606,9 @@ button.submit:active {
 
 /* Details.html styles start here */
 
-.full-details {
+/* .full-details {
   display: none;
-}
+} */
 
 .full-details-show {
   position: fixed;
