@@ -606,7 +606,7 @@ button.submit:active {
 
 /* Details.html styles start here */
 
-.full-details-show {
+.full-details {
   position: fixed;
   display: block;
   min-width: 375px;

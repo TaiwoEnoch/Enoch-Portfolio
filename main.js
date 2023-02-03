@@ -91,14 +91,14 @@ const createPopUpComponent = (project) => {
   const languages = project.projectLang.map((lang) => `<li class='code-list'>${lang}</li>`).join('');
   const detailPopup = document.createElement('section');
   detailPopup.classList.add('full-details');
-  detailPopup.id = `card-details-${1}`;
+  detailPopup.id = 'card-details';
   detailPopup.innerHTML = `<div class='combination'>
   <div class='div-for-details d-flex'>
     <div class='main-heading-detailed d-flex'>
         <p class='heading-data'>${project.projectName}</p>
         <p class='heading-desktop-data-popup'>${project.projectName}</p>
         <nav class='switch-off'></nav>
-          <i id='detail-card-off-${1}' class='fa-solid fa-x details-menu'></i>
+          <i id='detail-card-off' class='fa-solid fa-x details-menu'></i>
         </nav>
     </div>
     <ul class='new-list d-flex'>
@@ -133,6 +133,11 @@ const displayPopUp = (project) => {
   const body = document.querySelector('body');
   const popup = createPopUpComponent(project);
   body.appendChild(popup);
+  const cardClose = document.getElementById('detail-card-off');
+  cardClose.addEventListener('click', () => {
+    const detailPopup = document.getElementById('card-details');
+    detailPopup.remove();
+  });
 };
 
 const checkID = (id) => {
