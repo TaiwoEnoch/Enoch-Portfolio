@@ -177,6 +177,7 @@ section.my-work {
   width: 90%;
   align-self: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .placeholder {
@@ -212,7 +213,6 @@ section.my-work {
 
 .about-work {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -258,6 +258,10 @@ section.my-work {
   padding-bottom: 120px;
   width: 100%;
   margin: 0 auto;
+}
+
+#showcase-work {
+  position: relative;
 }
 
 .wk-section {
@@ -510,8 +514,8 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  transition-property: font-size;
-  transition-duration: 2s;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 button:visited {
@@ -598,15 +602,160 @@ button.submit:active {
   padding: 0 24px;
 }
 
-/* Responsiveness start from below */
+/* Details.html styles start here */
+
+/* Details.html styles start here */
+
+.full-details {
+  position: fixed;
+  display: block;
+  min-width: 375px;
+  height: 100%;
+  background: #c1c7d090;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  overflow-y: auto;
+}
+
+.details-popup-img {
+  width: 100%;
+}
+
+.combination {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  overflow-y: auto;
+  margin: 1rem auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.heading-data {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.div-for-details {
+  width: 90%;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.main-heading-detailed {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-menu {
+  color: #67798e;
+}
+
+.new-list {
+  gap: 12px;
+  padding: 1rem 0;
+}
+
+.code-list {
+  border: 1px solid #979493;
+  padding: 0.5rem;
+}
+
+.detail-words {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details-button,
+.details-button-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+}
+
+.snap-shot {
+  min-width: 100%;
+}
+
+.div-for-button {
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .heading-desktop-data-popup {
+    display: none;
+  }
+}
+
+/* Details.html styles Ends here */
+
+/* Responsiveness starts below */
 
 @media only screen and (min-width: 700px) {
-  .mobile {
+  .mobile,
+  .paragraph-mobile-popup,
+  .heading-data {
     display: none;
   }
 
-  #mobile-menu {
-    display: none;
+  .flex-one {
+    flex: 1;
+  }
+
+  .deatail-words {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .mobile-snap-popup {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .heading-desktop-data-popup {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .div-for-button {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .paragraph-desktop-popup {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 
   .nav-bar {
