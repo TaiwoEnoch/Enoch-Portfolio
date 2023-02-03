@@ -512,11 +512,11 @@ textarea {
 
 .error-msg--show {
   display: inline;
-  align-self: flex-start;
+  align-self: center;
+  padding-top: 0.5rem;
   width: auto;
   color: red;
   font-size: 1.5rem;
-  font-weight: bold;
   font-family: inherit;
 }
 

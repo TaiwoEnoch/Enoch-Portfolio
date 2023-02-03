@@ -172,16 +172,24 @@ document.querySelector('.b-t-n-1').addEventListener('click', () => {
 // Contact Validation starts here
 const contactForm = document.getElementById('contact-form');
 const contactFormError = document.getElementById('error-msg');
+const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (contactForm.elements.fullname.value.trim() === '') {
-    contactFormError.innerText = 'Please enter your name';
+    contactFormError.innerText = 'Kindly enter your Full Name';
     contactFormError.classList.add('error-msg--show');
   } else if (!emailRegex.test(contactForm.elements.email.value.trim())) {
-    contactFormError.innerText = 'Please enter your email in lower case';
+    contactFormError.innerText = 'Input your email in lower case';
     contactFormError.classList.add('error-msg--show');
-  } 
+  } else if (contactForm.elements.comment.value.trim() === '') {
+    contactFormError.innerText = 'Enter some text';
+    contactFormError.classList.add('error-msg--show');
+  } else {
+    contactFormError.innerText = '';
+    contactFormError.className = 'error-msg--hidden';
+    contactForm.submit();
+  }
 });
 // Contact Validation ends here
