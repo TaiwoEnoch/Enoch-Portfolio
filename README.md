@@ -79,7 +79,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/
+https://taiwoenoch.github.io/Enoch-Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,7 +110,7 @@ Example commands:
 
 ```sh
   cd your-folder
-  git clone https://github.com/TaiwoEnoch/Hello-Microverse.git
+  git clone https://github.com/TaiwoEnoch/Enoch-Portfolio.git
 ```
 --->
 
