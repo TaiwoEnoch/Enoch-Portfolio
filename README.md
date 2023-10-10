@@ -51,7 +51,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Portfolio-setup-and-mobile-first <a name="about-project"></a>
 
-**Portfolio-setup-and-mobile-first** is my first project of building portfolio in microverse as a new developer. It is intended to test students on their knowledge of setting up repositories and configuring linters and also to test the ability of the knowledge of html and css they have already.
+**Portfolio-setup-and-mobile-first** is my first project of building a portfolio in Microverse as a new developer. It is intended to test students on their knowledge of setting up repositories and configuring linter and also to test the ability of the knowledge of HTML and CSS they have already.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,9 +69,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Linters was setup to ensure standard coding practices**
+- **Linters were setup to ensure standard coding practices**
 - **Gitignore was used to hide some irrelevant files**
-- **GitHub flow was used for understanding of the reading of the code**
+- **GitHub flow was used for understanding the reading of the code**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
