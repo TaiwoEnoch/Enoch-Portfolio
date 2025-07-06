@@ -43,6 +43,8 @@ header {
   background-color: #3e3c3c;
   width: 100%;
   height: 5rem;
+  position: fixed;
+  z-index: 1000000;
 }
 
 .mobile-menu-hide {
